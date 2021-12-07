@@ -7,11 +7,11 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      deployment: sl
+      deployment: java-dept
   template:
     metadata:
       labels:
-        deployment: sl
+        deployment: java-dept
     spc:
       containers:
         - args:
