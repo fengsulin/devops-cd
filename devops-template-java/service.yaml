@@ -5,7 +5,7 @@ metadata:
   namespace: jenkins-cloud
 spec:
   selector:
-    deployment: sl-java
+    deployment: java-dept
   type: NodePort
   ports:
   - protocol: TCP
