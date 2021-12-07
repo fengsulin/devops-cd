@@ -1,0 +1,14 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: sl-java-ingress
+  namespace: jenkins-cloud
+spec:
+  rules:
+    - host: sl.devops.cn
+      http:
+        paths:
+          - backend:
+              serviceName: sl-java-service
+              servicePort: 8080
+            path: /
